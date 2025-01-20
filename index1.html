@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav
+                class="navbar navbar-expand-md navbar-light bg-light"
+            >
+                <div class="container">
+                    <a class="navbar-brand" href="#">AAC</a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" aria-current="page"
+                                    >Home
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reports</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Profile</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Account Settings</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Log out</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+                       
+            <nav
+            class="navbar navbar-expand-md navbar-light" style="background-color: lightblue" 
+        >
+            <div class="container">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page"
+                                >
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Setup Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transactional Forms</a>
+                        </li>
+                        
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+        
+
+
+        </header>
+        <main>
+            
+ <!-- Customer Setup Form -->
+            <div class="container my-4">
+                <form id="msform">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Customer Setup Form -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCustomer">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCustomer" aria-expanded="true" aria-controls="collapseCustomer">
+                                    Customer Setup Form
+                                </button>
+                            </h2>
+                            <div id="collapseCustomer" class="accordion-collapse collapse show" aria-labelledby="headingCustomer" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <fieldset>
+                                        <h2 class="fs-title">Customer</h2>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="customer-business-name" class="form-label">Business Name</label>
+                                                <input type="text" class="form-control" id="customer-business-name" placeholder="Business Name" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="customer-city" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="customer-city" placeholder="City" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <label for="customer-address" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="customer-address" placeholder="Address" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-4">
+                                                <label for="customer-contact-number" class="form-label">Contact Number</label>
+                                                <input type="number" class="form-control" id="customer-contact-number" placeholder="Number" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="customer-email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="customer-email" placeholder="Email" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="customer-contact-person" class="form-label">Contact Person</label>
+                                                <input type="text" class="form-control" id="customer-contact-person" placeholder="Contact Person" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="customer-remarks" class="form-label">Remarks</label>
+                                                <input type="text" class="form-control" id="customer-remarks" placeholder="Remarks" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="customer-opening-amount" class="form-label">Opening</label>
+                                                <input type="number" class="form-control" id="customer-opening-amount" placeholder="Opening" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="customer-active" class="form-label">Active</label>
+                                                <select class="form-select" id="customer-active">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="0">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end gap-2 mt-4">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+        
+            <!-- Supplier Setup Form -->
+
+            <div class="container my-4">
+                <form id="msform">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Supplier Setup Form -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSupplier">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupplier" aria-expanded="true" aria-controls="collapseSupplier">
+                                    Supplier Setup Form
+                                </button>
+                            </h2>
+                            <div id="collapseSupplier" class="accordion-collapse collapse show" aria-labelledby="headingSupplier" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <fieldset>
+                                        <h2 class="fs-title">Supplier</h2>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="supplier-name" class="form-label">Business Name</label>
+                                                <input type="text" class="form-control" id="supplier-name" placeholder="Business Name" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="supplier-nature" class="form-label">Nature</label>
+                                                <select class="form-select" id="supplier-nature">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">Wholesale</option>
+                                                    <option value="2">Retail</option>
+                                                    <!-- Add more options as needed -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="supplier-address" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="supplier-address" placeholder="Address" />
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="supplier-city" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="supplier-city" placeholder="City" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="supplier-business-number" class="form-label">Business Number</label>
+                                                <input type="number" class="form-control" id="supplier-business-number" placeholder="Number" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-4">
+                                                <label for="supplier-email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="supplier-email" placeholder="Email" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="supplier-contact-person" class="form-label">Contact Person</label>
+                                                <input type="text" class="form-control" id="supplier-contact-person" placeholder="Contact Person" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="supplier-contact-number" class="form-label">Contact Number</label>
+                                                <input type="text" class="form-control" id="supplier-contact-number" placeholder="Contact Number" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="supplier-opening-amount" class="form-label">Opening Amount</label>
+                                                <input type="number" class="form-control" id="supplier-opening-amount" placeholder="Opening" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="supplier-active" class="form-label">Active</label>
+                                                <select class="form-select" id="supplier-active">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="0">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    
+            
+
+
+                        <!-- Supplier Attributes Form-->
+
+
+            
+                        <!-- Supplier Attributes Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSupplierAttributes">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupplierAttributes" aria-expanded="true" aria-controls="collapseSupplierAttributes">
+                                    Supplier Attributes
+                                </button>
+                            </h2>
+                            <div id="collapseSupplierAttributes" class="accordion-collapse collapse show" aria-labelledby="headingSupplierAttributes" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <fieldset>
+                                        <h2 class="fs-title">Supplier Attributes</h2>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="supplier-new-attribute" class="form-label">New Attribute</label>
+                                                <input type="text" class="form-control" id="supplier-new-attribute" placeholder="Attribute" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="supplier-attribute-name" class="form-label">Attribute Name</label>
+                                                <select class="form-select" id="supplier-attribute-name">
+                                                    <option selected>Choose...</option>
+                                                    <option value="nature1">Nature 1</option>
+                                                    <option value="nature2">Nature 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <button type="button" class="btn btn-sm btn-primary">Save</button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+             <div class="container my-4">
+                 <form id="msform">
+                    <div class="accordion" id="accordionExample">            
+        
+                        <!-- Company Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCompany">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompany" aria-expanded="false" aria-controls="collapseCompany">
+                                    Company
+                                </button>
+                            </h2>
+                            <div id="collapseCompany" class="accordion-collapse collapse" aria-labelledby="headingCompany" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <fieldset>
+                                        <h2 class="fs-title">Company</h2>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="company-account-name" class="form-label">Account</label>
+                                                <input type="text" class="form-control" id="company-account-name" placeholder="New Company Account Name" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="company-name" class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" id="company-name" placeholder="Business Name" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="company-bank-remarks" class="form-label">Remarks</label>
+                                                <input type="text" class="form-control" id="company-bank-remarks" placeholder="Remarks" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="company-active" class="form-label">Active</label>
+                                                <select class="form-select" id="company-active">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="0">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <button type="button" class="btn btn-sm btn-primary">Save</button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <div class="container my-4">
+                <form id="msform">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Company Bank Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCompanyBank">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompanyBank" aria-expanded="true" aria-controls="collapseCompanyBank">
+                                    Company Bank
+                                </button>
+                            </h2>
+                            <div id="collapseCompanyBank" class="accordion-collapse collapse show" aria-labelledby="headingCompanyBank" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-company-bank-name" placeholder="Bank Name" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-company-bank-account-name" placeholder="Account Number" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-company-bank-address" placeholder="Address" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-company-bank-branch" placeholder="Branch" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="number" class="form-control" id="new-company-bank-phone" placeholder="Phone" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="number" class="form-control" id="new-company-bank-opening-amount" placeholder="Opening" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="company-active">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Active</option>
+                                                <option value="0">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+         
+            <div class="container my-4">
+                 <form id="msform"> 
+                       <div class="accordion" id="accordionExample"       >     
+
+
+
+                     <!-- Store Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingStore">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStore" aria-expanded="false" aria-controls="collapseStore">
+                                    Store
+                                </button>
+                            </h2>
+                            <div id="collapseStore" class="accordion-collapse collapse" aria-labelledby="headingStore" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-store-name" placeholder="New Store Name" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-store-display-name" placeholder="Business Name" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-store-type">
+                                                <option selected>Choose Type...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-store-nature">
+                                                <option selected>Choose Nature...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-store-office">
+                                                <option selected>Choose Office...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="number" class="form-control" id="new-store-opening-amount" placeholder="Expense Opening" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="new-store-active">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Active</option>
+                                                <option value="0">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+            
+                        <!-- Store Attributes Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingStoreAttributes">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStoreAttributes" aria-expanded="false" aria-controls="collapseStoreAttributes">
+                                    Store Attributes
+                                </button>
+                            </h2>
+                            <div id="collapseStoreAttributes" class="accordion-collapse collapse" aria-labelledby="headingStoreAttributes" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="warehouse-new-attributes">
+                                                <option selected>Choose Attributes...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="new-warehouse-attributes-nature">
+                                                <option selected>Choose Nature...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="container my-4">
+                <form id="msform"> 
+                      <div class="accordion" id="accordionExample">
+
+            
+                        <!-- Office Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOffice">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOffice" aria-expanded="false" aria-controls="collapseOffice">
+                                    Office
+                                </button>
+                            </h2>
+                            <div id="collapseOffice" class="accordion-collapse collapse" aria-labelledby="headingOffice" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-office-name" placeholder="New Office Name" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="new-office-display-name" placeholder="Business Name" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-office-type">
+                                                <option selected>Choose Type...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-office-nature">
+                                                <option selected>Choose Nature...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" id="new-office-grade">
+                                                <option selected>Choose Grade...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="new-office-active">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Active</option>
+                                                <option value="0">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <!-- Office Attributes Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOfficeAttributes">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOfficeAttributes" aria-expanded="false" aria-controls="collapseOfficeAttributes">
+                                    Office Attributes
+                                </button>
+                            </h2>
+                            <div id="collapseOfficeAttributes" class="accordion-collapse collapse" aria-labelledby="headingOfficeAttributes" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="-new-office-attributes">
+                                                <option selected>Choose Attributes...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select class="form-select" id="new-office-attributes-nature">
+                                                <option selected>Choose Nature...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+                </form>
+            </div>
+            
+
+
+
+
+            <div class="container my-4">
+                <form id="msform">
+                    <div class="accordion" id="accordionExample">
+            
+                        <!-- New Employee Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEmployee">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
+                                    New Employee
+                                </button>
+                            </h2>
+                            <div id="collapseEmployee" class="accordion-collapse collapse show" aria-labelledby="headingEmployee" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h2 class="fs-title">New Employee</h2>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="New Employee Name" id="new-Employee-name" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="New Employee Display Name" id="new-office-display-name" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <input type="dropdown" class="form-control" placeholder="Active" id="new-employee-active" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Address" id="new-employee-address" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="City" id="new-employee-city" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email" id="new-employee-email-address" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="number" class="form-control" placeholder="Number" id="new-employee-contact-number" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Personal Details Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPersonal">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal">
+                                    Personal Details
+                                </button>
+                            </h2>
+                            <div id="collapsePersonal" class="accordion-collapse collapse" aria-labelledby="headingPersonal" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h2 class="fs-title">Personal Details</h2>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Father" id="new-Employee-father-name" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Date of Birth" id="new-employee-dob" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Nationality" id="new-employee-nationality" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Blood" id="new-employee-blood-group" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Gender" id="new-employee-gender" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Marital Status" id="new-employee-Marital-Status" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="number" class="form-control" placeholder="Opening" id="new-employee-expense-opening-amount" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Emergency Contact Accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEmergency">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmergency" aria-expanded="false" aria-controls="collapseEmergency">
+                                    Emergency Contact
+                                </button>
+                            </h2>
+                            <div id="collapseEmergency" class="accordion-collapse collapse" aria-labelledby="headingEmergency" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h2 class="fs-title">Emergency Contact</h2>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Relation" id="new-employee-emergency-contact-relation" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Name" id="new-employee-emergency-contact-name" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="Address" id="new-employee-emergency-contact-address" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="City" id="new-employee-emergency-contact-city" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="number" class="form-control" placeholder="Number" id="new-employee-emergency-contact-number" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+            
+                    </div>
+                </form>
+            </div>
+            
+            
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
